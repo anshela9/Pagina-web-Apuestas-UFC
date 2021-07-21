@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>Apuestas UFC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Recursive:wght@300&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <svg width="250" height="620"></svg>
+        </header>
+</section>
+    <section class="about">
+        <div> 
+            <center>
+            <h2>APUESTAS ONLINE</h2> </center>                
+            <p>Usualmente, apostar en eventos de la UFC es muy simple: los apostadores deciden qué peleador ganará la pelea. Hay algunas otras opciones y tipos de apuestas en la UFC y es útil estar al tanto de estas opciones para tomar una decisión correcta, basada en la que se mejor se ajusta a tu estilo.</p>
+            <a href="https://www.ufcespanol.com/event/ufc-fight-night-june-19-2021#" title="Go to W3Schools HTML section">Visita la pagina oficial de la UFC</a>
+            
+            <CEnter><h3>PELEADORAS</h3></CEnter>
+        </section>
+    <section class="product">
+        <div id="prod">
+            <img src="img/4.png">
+            <figcaption>
+                <h1 id="t2">VS</h1>
+            </figcaption>
+        </div>
+        <div id="prod">
+            <img src="img/5.png">
+            <figcaption>
+                <h1 id="t2">VS</h1>
+            </figcaption>
+        </div>
+        <div id="prod">
+            <img src="img/6.png">
+            <figcaption>
+                <h1 id="t2"> VS</h1>
+            </figcaption>
+        </div>
+    </section>
+    <section class="product">
+    </div>
+    <div id="prod">
+        <img src="img/7.png">
+        <figcaption>
+           
+           
+        </figcaption>
+    </div>
+    <div id="prod">
+        <img src="img/8.png">
+        <figcaption>
+        
+           
+        </figcaption>
+    </div>
+    <div id="prod">
+        <img src="img/9.png">
+        <figcaption>
+
+            
+        </figcaption>
+    </div>
+    </section>
+    <section class="contact">
+        <div>      </div>
+        <body onload="imprimir()" class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h3>Registros de Apuestas</h3>
+                    <fieldset>
+                        <label for="slUfc" class="form-label">Peleadora</label>
+                        <select class="form-select" name="slPUfc" id="slUfc"  aria-label="Default select example">
+                            <option value="0" selected>SELECCIONES</option>
+                            <option value="Jessica Aguilar">Jessica Aguilar</option>
+                            <option value="Alexandra Albu">Alexandra Albu</option>
+                            <option value="Irene Aldana">Irene Aldana</option>
+                            <option value="jj Aldrich">jj Aldrich</option>
+                            <option value="Ericka Almeida">Ericka Almeida</option>
+                            <option value="Sarah Alpar">Sarah Alpar</option>
+                        </select>
+                        <label for="slApuesta" class="form-label">Tipo de Apuesta</label>
+                        <select class="form-select" name="slApuesta" id="slApuesta"  aria-label="Default select example">
+                            <option value="0" selected>SELECCIONES</option>
+                            <option value="Moneyline">Moneyline</option>
+                            <option value="Over/Under">Over/Under</option>
+                            <option value="Props">Props</option>
+                            <option value="Futuro">Futuro</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="txtPerdidas" class="form-label">#N de Peleas Perdidas</label>
+                            <input type="number" class="form-control" id="txtPerdidas" min="0">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="txtGanadas" class="form-label">#N de Peleas Ganadas</label>
+                            <input type="number" class="form-control" id="txtGanadas" min="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txtRounds" class="form-label">Rounds (aqui son en aquellas que tendra mas puntos)</label>
+                            <input type="number" class="form-control" id="txtRounds" min="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="txtTapuesta" class="form-label"> Apuesta</label>
+                            <input type="number" step="0.01" class="form-control" id="txtTapuesta" min="0">
+                        </div>
+                        <div class="mb-3">
+                            <button onclick="agregar()" type="button" class="btn btn-primary">Agregar</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-1">
+                </div>
+                <div class="col-5">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Peleadora</th>
+                            <th scope="col">Tipo de Apuesta</th>
+                            <th scope="col">Peleas Perdidas</th>
+                            <th scope="col">Peleas Ganadas</th>
+                            <th scope="col">Rounds</th>
+                            <th scope="col">Apuesta</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tblUfc">
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    Total Apuesta
+                                    <td><td><td><td><td id="tdTotalTapuesta">
+                                </td></td></td></td></td>
+                            </tr>
+                        </tfoot>
+                      </table>
+                </div>
+            </div>
+            <footer>
+        <script src="js/script-index.js"></script>
+            </footer>
+        </body>
+      </section>      
+      <section class="about">
+        <div>      </div>
+        <div>
+            <center>
+                <h2>Todos los derechos reservados son de Anshela Castillo</h2>                 
+                <h1>amcastillo9@espe.edu.ec</h1>
+            </center>
+                     
+      </section>        
+    
+</body>
+
+</html>
